@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="">
+<meta name="description" content=" ">
+<meta name="theme-color" content="#000">
+<title>Obsidian-Cloudinary | 2H ISLAND</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1735454259034">
+<link rel="stylesheet" href="/media/css/mist.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-material.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+  <meta name="description" content="Obsidian-Cloudinary" />
+  <meta name="keywords" content="建博相关" />
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="mist">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper  " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="">
+              <span class="logo-line-before">
+                <i class=""></i>
+              </span>
+              <span class="main-title">2H ISLAND</span>
+              <span class="logo-line-after">
+                <i class=""></i>
+              </span>
+            </a>  
+          
+        </div>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives" target="_self">
+                  <i class="fa fa-globe"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout mist bg-color">
+      <div class="section-layout-wrapper">
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper  right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body mist" id="sidebar_body">
+        
+          
+            
+<div class="sidebar-wrapper box-shadow-wrapper ">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">rhlohd</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">9</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+  
+
+  
+
+
+
+</div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://rh10hd.github.io/post/qLuoHTI65/"> Obsidian-Cloudinary </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2024-01-10 16:51:03">2024-01-10</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">标签:</span>
+       
+      <a href="https://rh10hd.github.io/tag/lV2jIIrKV/">
+        <span>建博相关</span>
+      </a>
+       
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >1<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >96<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <p>搜了好久，终于发现一个可以优雅使用Cloudinary的<a href="https://github.com/uday-samsani/obsidian-cloudinary"><strong>插件</strong></a>，可以直接在Ob里面上传图片到Cloudinary并且返回URL。</p>
+<p>设置也很简单，只需要设置cloud name, cloud upload template和cloud upload folder就完事了。</p>
+<p>实际测试了一下，速度很快。以后就安心使用Obsidian写博客了😌不用窗口来回切换复制粘贴了。</p>
+
+            </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      rhlohd
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://rh10hd.github.io/post/qLuoHTI65/" title="Obsidian-Cloudinary">https://rh10hd.github.io/post/qLuoHTI65/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://rh10hd.github.io/tag/lV2jIIrKV/"># 建博相关</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="欢迎你来到虚构世界——关于游戏Figment2: Creed Valley" href="https://rh10hd.github.io/post/Figment2_Review/">欢迎你来到虚构世界——关于游戏Figment2: Creed Valley</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="欢迎你来到虚构世界——关于游戏Figment2: Creed Valley" href="https://rh10hd.github.io/post/Figment2_Review/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+    </div>
+  </div>
+</div>
+            
+            
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('23/12/31');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+    
+      <div class="drawer-box left" id="drawer_box">
+        <span class="muse-line muse-line-first"></span>
+        <span class="muse-line muse-line-middle"></span>
+        <span class="muse-line muse-line-last"></span>
+      </div>
+      
+        <div class="mist back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+        
+          
+            
+              <div class="bg-img">
+                <img src="/media/images/custom-bgImg.jpg" />
+              </div>
+              
+                
+                  
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "true";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "下次再见";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip"> </p>
+    </div>
+    <div class="bottom">
+      
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/B_tDwX2Z6K/"" data-c="
+          &lt;p&gt;永远记住一句话：工具是为了人而服务的，不要过度沉迷于购买工具。&lt;/p&gt;
+&lt;p&gt;黑五的时候&lt;a href=&#34;https://unclutterapp.com/&#34;&gt;Unclutter&lt;/a&gt;的公司搞了个space&amp;amp;time bundle的活动，趁机半价入手了&lt;a href=&#34;https://www.keyboardmaestro.com/main/&#34;&gt;Keyboard Maestro&lt;/a&gt;和&lt;a href=&#34;https://daisydiskapp.com/&#34;&gt;DaisyDisk&lt;/a&gt;，可以说是我最近一段时间花得最值的两笔钱，尤其是KM，太方便懒人了，它的论坛也非常活跃，可以说是我见过最活跃的软件相关论坛了。不管在上面问什么问题，都有人帮忙解答。&lt;/p&gt;
+&lt;p&gt;最近&lt;a href=&#34;https://www.artisanalsoftwarefestival.com/&#34;&gt;WinterFest 2024&lt;/a&gt;也在搞活动，入手了&lt;a href=&#34;https://www.devontechnologies.com/apps/devonagent&#34;&gt;DEVONagent Pro&lt;/a&gt;，搜索效率很高，过滤也做得很好，去除了重复页和广告页，节省了大量时间，每次搜索一些韩语知识点的时候都非常方便，终于不用在千百个网页中找来找去，看得头晕眼花了。&lt;/p&gt;
+&lt;p&gt;WinterFest 2024中的&lt;a href=&#34;https://www.literatureandlatte.com/scapple/overview&#34;&gt;Scapple&lt;/a&gt;也很好用，是我用过得最好的Mindmap工具，也是我认为最符合人脑思考习惯的MindMap工具——随时随地插入节点，完全不用拘泥于任何形式，编辑起来就像在纸张上编辑一样。唯一的缺点就是没有移动端，不过开发商已经明确表示正在开发中。同一开发商旗下的&lt;a href=&#34;https://www.literatureandlatte.com/scrivener/overview&#34;&gt;Scrivener&lt;/a&gt;也推荐给喜欢码文的朋友，具体功能就不多介绍了，官方有介绍视频和文档（全英）。这两款软件的试用也很人性化，虽然标注的试用时间是30天，但是只有打开使用才会计入使用时间，也就是说如果一个月只用1天，那么30天的试用时间就相当于能试用30个月，将近3年，不过应该也不会有人一个月只用一天的吧？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.houdah.com/houdahSpot/&#34;&gt;HoudahSpot&lt;/a&gt;也推荐一试，搜索速度非常快，几乎是我按下回车的一瞬间，它就立刻跳出了结果，已经成为了我最爱用的文件检索软件，支持&lt;a href=&#34;https://www.popclip.app/extensions/x/g7fk28&#34;&gt;PopClip&lt;/a&gt;和Alfred，每次卸载完某款软件以后我都会用这个软件去检索并删除残留文件。不购买也可以一致使用，只是会弹出购买提示，其余功能与付费版完全一致。&lt;/p&gt;
+&lt;p&gt;下一次更博文就是2025年了吧，希望下一年也能继续多更博客，多看书，幸福健康。&lt;/p&gt;
+">黑五和圣诞买的一些软件</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/8ek1bIx7io/"" data-c="
+          &lt;h1 id=&#34;决定迁移&#34;&gt;决定迁移&lt;/h1&gt;
+&lt;p&gt;最近也在忙着将OneNote的笔记都迁移到Obsidian，使用ON的时间越长就越发觉它的鸡肋，占用体积越来越夸张，现在已经超过1Gb，我实在不明白，一个简单的笔记软件为什么会这么大，但是功能又那么不完善：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;表格嵌套虽然非常方便和自由，但是连最基础的合并单元格都不支持&lt;/li&gt;
+&lt;li&gt;搜索功能非常难用，经常找不到想要的结果&lt;/li&gt;
+&lt;li&gt;虽然可以使用Onedrive同步，但是网页端必须要翻墙才能使用&lt;/li&gt;
+&lt;li&gt;不支持Apple Script，导致非常多的插件无法使用。（Alfred的Workflow和&lt;a href=&#34;https://hookproductivity.com/&#34;&gt;Hookmark&lt;/a&gt;都无法使用）&lt;/li&gt;
+&lt;li&gt;双向链接十分鸡肋，跳转实在太慢了…有时候甚至跳不了，远不如OB的链接跳转来得方便&lt;/li&gt;
+&lt;li&gt;格式不够普适，不像txt和md一样可以随时迁移。（你所记录的笔记不应该只适用于你现在正在使用的软件）&lt;/li&gt;
+&lt;li&gt;Web Clipper的插件至今都不支持Safari，只能在Chrome上使用。&lt;/li&gt;
+&lt;li&gt;tag功能约等于无，只有文件夹功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Obisidian我一直都拿来记录看过的书影音和播客，各类功能和插件都已经摸得差不多了，于是毅然决然地决定将笔记从ON迁移到OB。整理笔记的时候发现自己真的记录了好多东西，而且有一种自己以前都是在摘抄记录而不是思考记录的感觉。记笔记最重要的过程还是自己思考得出结论的过程，而不是一味地摘抄自我感动的过程。&lt;/p&gt;
+&lt;h1 id=&#34;the-archive&#34;&gt;The Archive&lt;/h1&gt;
+&lt;p&gt;在&lt;a href=&#34;https://support.hogbaysoftware.com/t/how-do-others-handle-document-management-with-bike/5556&#34;&gt;Bike Outliner的论坛&lt;/a&gt;闲逛的时候发现了&lt;a href=&#34;https://zettelkasten.de/the-archive/&#34;&gt;The Archive&lt;/a&gt;这款软件，认真了解了一下，发现就是电子版本的卢曼卡片笔记工具，但是创始人认为工具应该是为人服务的，因此你想怎么用都可以，不受限于其他事情。下载试用到现在半个多月，我不得不说这款工具麻雀虽小五脏俱全，search功能很赞，哪怕不在里面直接创建笔记，也能够指向某个文件夹，很好地弥补了OB的集合指向功能，因为这款软件，我现在在OB中新建的笔记都不再继续建立子文件夹了，专注于tag，因为我发现有很多笔记是没有办法只放在一个文件夹中，有可能这个笔记和多个主题都相关，那这个时候只能靠tag了。&lt;/p&gt;
+&lt;p&gt;创始人和论坛也非常活跃，我经常在里面看大家笔记记录、建立知识体系的分享，很久没有见过这么nice的知识交流过程了。最近这款软件推出了1.80版本，支持插件，希望以后能看到这款软件更好的发展。&lt;/p&gt;
+">笔记迁移和笔记工具</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/bJW2_iuEAh/"" data-c="
+          &lt;h1 id=&#34;劫难历程&#34;&gt;劫难历程&lt;/h1&gt;
+&lt;p&gt;前一阵Mac不知道怎么了，莫名其妙开始卡顿，突然鼠标就会卡住不动，按键盘也没有反应，等30s左右就会恢复，我以为正常了，结果过一会儿又会鼠标、键盘全都没有反应，循环往复几次以后用户就会自动重新登录，或者直接黑屏，只有重启才能解决。虽然资料没有丢失，但是随着时间的推移，卡顿发生的频率越来越高，一天会发生三次以上，实在让人没法好好工作。&lt;/p&gt;
+&lt;p&gt;一开始我以为是升级新系统的缘故，因为这个问题正好在我升级了14.7.2后的几天，所以当时我衡量了一下，将系统升级到了15，一个上午过去都没发生这个问题，在我以为卡顿终于解决以后，噩梦又继续了。&lt;/p&gt;
+&lt;p&gt;按照各种关键词四处搜索后，找到了&lt;a href=&#34;https://medium.com/@tobemaster/%E8%A7%A3%E5%86%B3-mac-%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%8D%A1%E9%A1%BF-4a8ab8a30415&#34;&gt;&lt;strong&gt;一篇文章&lt;/strong&gt;&lt;/a&gt;，按照里面的方法逐一试验，都没什么用，还是继续卡顿，我甚至连关闭聚焦搜索都试过了，也不起作用。直到某一天我又搜索mac卡顿的时候发现了一篇文章，里面提到一个方法——尝试卸载最近安装的软件，本着死马当活马医的心态试试，卸载了几个最近安装的软件&lt;a href=&#34;https://shortcat.app/&#34;&gt;&lt;strong&gt;shortcat&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.devontechnologies.com/apps/freeware&#34;&gt;&lt;strong&gt;EasyFind&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.xnview.com/en/xnview/&#34;&gt;&lt;strong&gt;XnView&lt;/strong&gt;&lt;/a&gt;，&lt;a href=&#34;https://marco.org/apps#quitter&#34;&gt;&lt;strong&gt;Quitter&lt;/strong&gt;&lt;/a&gt;，终于我的Mac恢复正常了。毫不夸张地说，发生卡顿问题的一个星期内，Mac关机次数比过去3年都多。再也不敢乱装软件了。&lt;/p&gt;
+&lt;h1 id=&#34;后续&#34;&gt;后续&lt;/h1&gt;
+&lt;p&gt;不过折腾的过程中也重新捡起了&lt;a href=&#34;https://rime.im/&#34;&gt;&lt;strong&gt;Rime输入法&lt;/strong&gt;&lt;/a&gt;，其实很早之前就试过，发现不太好用，还是更喜欢原生输入法，但是这一次发现这款输入法也挺不错的，就直接替换掉了原生输入法。但是粤拼输入法为什么怎么都装不进去？？&lt;/p&gt;
+&lt;p&gt;也顺带将Kensington的鼠标设置软件&lt;a href=&#34;https://www.kensington.com/zh-cn/software/kensingtonworks/&#34;&gt;&lt;strong&gt;KensingtonWorks&lt;/strong&gt;&lt;/a&gt;给替换成了&lt;a href=&#34;https://karabiner-elements.pqrs.org/&#34;&gt;&lt;strong&gt;Karabiner&lt;/strong&gt;&lt;/a&gt;和&lt;a href=&#34;https://macmousefix.com/&#34;&gt;&lt;strong&gt;Mac Mouse Fix&lt;/strong&gt;&lt;/a&gt;，原来的软件实在太大了，也非常不实用。&lt;/p&gt;
+&lt;p&gt;长时间不用的PS和AI也被我卸载了，一瞬间给电脑腾出了10g的空间，不敢想像Adobe究竟在我的电脑里都装了些什么东西。&lt;/p&gt;
+">Mac卡顿</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/Dungeons_of_Hinterberg/"" data-c="
+          &lt;p&gt;前一阵通关了&lt;a href=&#34;https://store.steampowered.com/app/1983260/__Dungeons_of_Hinterberg/&#34;&gt;《辛特堡传说》(Dungeons of Hinterberg)&lt;/a&gt;，XBOX显示游玩时间24h，但我感觉我似乎没玩多久游戏就结束了:) 好久没这么沉迷一款游戏了，其实同时期还在玩SteamWorld Dig:-D 不过玩游戏就是要多个游戏一起玩才有意思！&lt;/p&gt;
+&lt;h2 id=&#34;剧情和游戏重心&#34;&gt;剧情和游戏重心&lt;/h2&gt;
+&lt;p&gt;游戏的剧情设定是女主路易莎原本是在律所工作的律师，但是因为工作压力大，于是选择来到辛特堡逃离都市生活，结果阴差阳错地卷入了镇长的阴谋，就这么顺理成章地背上了破解阴谋、拯救小镇的责任。不过游戏的剧情其实也不是重点，我根本不会说，我玩到结局已经忘记大部分剧情了。因为游戏的工作室&lt;a href=&#34;https://x.com/microbirdgames&#34;&gt;MicrobirdGames&lt;/a&gt;本身就在奥地利，所以游戏中常常出现“奥地利”和“阿尔卑斯山”，制作组也很贴心地制作了滑雪地图，非常有意思。画风也很独特，一种类似美漫但又不完全是的风格，游戏解锁相机以后我经常在里面拍照，游戏的过场加载也很漂亮。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/v1727279849/tu9yrwbg0huu2zusz2jh.png&#34; alt=&#34;雪山&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;虽说该游戏给自己的定位是冒险动作游戏，但是游玩的时候能非常明显地感觉到解谜才是其重心，其他都是调味料。所幸这盘主菜真的做得非常好。&lt;/p&gt;
+&lt;p&gt;整个地图分为五大板块，除去特别设定的一个板块其余每个板块都有各自的魔法设定，而每一个魔法设定都有非常好地融入进了解谜中，其中也能看到其他游戏的影子，譬如最后一张地图的“空间错乱”，就总让我想到《纪念碑谷》和《前进！奇诺比奥队长》。整体解谜难度适中，引导适当，稍微动动脑就能够解开谜题，每次成功解谜后我都觉得我实在太！聪！明！了！而这些魔法设定也不仅仅只是为了解谜而存在，在打怪的时候也能够派上用场。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/v1727280108/gb44vagjdkwwztbrxpdv.png&#34; alt=&#34;其中一个森林板块的过场动画&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;当然其中部分地下城也是存在BOSS需要征服的，并不是完全的解谜，游戏在大方向上的解谜和打怪之间的平衡还是做得不错的。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/v1727280295/udoi7unpgzoivalon8aj.png&#34; alt=&#34;BOSS&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;好友和好感度系统&#34;&gt;好友和好感度系统&lt;/h2&gt;
+&lt;p&gt;制作组为了不让玩家觉得无聊，还贴心地设计了好友系统和好感度系统，让玩家在打怪之余多和小镇上的人往来，提高好感度，以此增加一些BUFF，同时推进游戏剧情的发展。好感度系统我觉得非常好的一点是没有强制要求某一位NPC或者所有NPC的好感度和成就挂钩，天知道这点对于成就党（譬如我）来说有多么友好。当然该在和NPC交友的过程中也有令人很烦躁的一点就是对话实在太长太多了，虽然制作组设计了跳过按键，但是却没有对话记录，以至于我后期完全不想看冗长的对话但是又无法得知NPC身上的故事，这点对我来说还是缺少了一些参与感的，希望后期制作组能够添加回溯对话的功能吧。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/v1727280219/k7ric7ugh4snvjxeuxpq.png&#34; alt=&#34;主角所在的小镇&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;还有一点要吐槽的是，制作组虽然告诉我“不想去地下城也是可以的，多和朋友们玩吧”，但是每天早上制作组都让我一定要选一个地下城去打怪！完全不给予我任何选择的余地！&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/v1727279675/dvczb09rju4lxmwowx6x.png&#34; alt=&#34;去玩儿吧&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;战斗与金钱系统&#34;&gt;战斗与金钱系统&lt;/h2&gt;
+&lt;p&gt;通关游戏以后我找了工作室的&lt;a href=&#34;https://gameranx.com/features/id/503577/article/dungeons-of-hinterberg-interview-gameplay-inspirations-post-launch-plans-more/&#34;&gt;访谈&lt;/a&gt;，里面提到他们试图平衡整个地图的探索感和地下城的体验感，但是在游玩的过程中我仍然能很明显地感觉到制作组的力不从心。&lt;/p&gt;
+&lt;p&gt;金钱系统是当中设计最不合理的一个，玩到结局的时候我还剩下二十多万辛特币，完全不知道干什么好。买装备也不需要，因为地下城本身就能够获得不错的装备，于是我都拿来买各种药水和送给NPC的礼物了。好在制作组似乎认识到了这一点，在9月9月推出了更新，增加了换装系统，玩家可以用辛特币购买服装给路易莎换装，不过服装种类还是挺少的。&lt;/p&gt;
+&lt;p&gt;游戏的战斗系统也存在一定的不合理，装备数值我其实是有点看不懂的，每次更换装备的时候，上升或者下降的幅度非常模棱两可，很不明晰，以至于我对于更换装备这件事都是一股脑的换位置在最上面的装备。魔符的设计也是可有可无，我每次升级魔符都是为了完成成就（有三个成就与之相关）。怪物的种类非常少，来来回回就是那么几种，挺无聊的。&lt;/p&gt;
+&lt;p&gt;不过有一点让我觉得很新奇的是，在地下城遇到了景点可以在里面待一下午，以此增加主角的各种属性（虽然待在那里就是路易莎自己在不停地碎碎念，有点好笑）&lt;/p&gt;
+&lt;h2 id=&#34;总体评价&#34;&gt;总体评价&lt;/h2&gt;
+&lt;p&gt;10/10&lt;/p&gt;
+&lt;p&gt;尽管角色动作僵硬，怪物重复无聊，甚至在教程关卡我就一度想要弃游，但是还好我没有因为一时太过生气就弃游了，游戏中的解谜真的非常有意思，恰到好处的指引让我在解谜后获得充裕的满足感，新奇的谜题设定也让我在游玩过程中直呼“居然可以这样？！”。我已经开始期待工作室的下一部作品了。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/v1727280026/muzggmlaxyhl01h6yr6p.png&#34; alt=&#34;结尾&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+">《辛特堡传说》 —— 逃离都市，来一场酣畅淋漓的魔法解谜</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/2024-08-02/"" data-c="
+          &lt;p&gt;最近一直在弄Alfred，看着折腾好的Workflow很有成就感，尤其是Debug成功的时候，特别开心。但是感觉自己有点本末倒置了，本身我找Workflow就是为了能够提升自己的效率，结果我把更多的时间放在了折腾上面，我似乎应该把沉迷于折腾这些工具的时间拿去做我原本就想做、该做的事情。&lt;/p&gt;
+&lt;p&gt;不过最近发现了个人觉得非常实用的GTD软件——&lt;a href=&#34;https://www.taskpaper.com/&#34;&gt;&lt;strong&gt;TaskPaper&lt;/strong&gt;&lt;/a&gt;，配合iOS&lt;a href=&#34;https://apps.apple.com/cn/app/taskmator-taskpaper-client/id806250172&#34;&gt;&lt;strong&gt;TaskMator - TaskPaper Client&lt;/strong&gt;&lt;/a&gt;一起使用，特别赞，还能导出到苹果自带的提醒事项。不过国内提到TaskPaper的特别少，搜到的最新文章还是几年前少数派的文章。当时买的时候我还犹豫了好一会儿，好在没让我失望，又让我找回了小时候在纸上写待办事项、清理完成事项的乐趣，每天都要看看自己的待办事项然后划掉再去睡觉才觉得安心，看到这么多完成的待办，成就感倍增。&lt;/p&gt;
+&lt;p&gt;在TaskPaper官网还看到的了一款outline工具&lt;a href=&#34;https://www.hogbaysoftware.com/bike/&#34;&gt;&lt;strong&gt;Bike Outliner&lt;/strong&gt;&lt;/a&gt;，以前没有用过outline一类的工具，发现意外得很有用，突然灵感来了，随手一记，再定期整理到Obsidian，果然这种复杂的编辑还是更喜欢纯文本。手机端目前则是使用免费的&lt;a href=&#34;https://zavala.vincode.io/&#34;&gt;&lt;strong&gt;Zavala&lt;/strong&gt;&lt;/a&gt;，也有Mac和iPad端，支持iCloud同步，Mac端支持导出MD、PDF格式，但是编辑方面个人感觉还是Bike更为舒服，不过免费的还奢求什么呢？但是挺奇怪的是，我在手机上用Zavala编辑Bike的OPML居然不会影响到Bike的原文档，而且在Zavala创建新文档后我在iCloud中也找不到原文档。&lt;/p&gt;
+&lt;p&gt;前一阵还在&lt;a href=&#34;https://bundlehunt.com/bundle/2024-epic-utility-bundle&#34;&gt;&lt;strong&gt;Bundle Hunt&lt;/strong&gt;&lt;/a&gt;买了&lt;a href=&#34;https://c-command.com/eaglefiler/&#34;&gt;&lt;strong&gt;EagleFiler&lt;/strong&gt;&lt;/a&gt;和&lt;a href=&#34;https://www.witt-software.com/rockettypist/&#34;&gt;&lt;strong&gt;Rocket Typist&lt;/strong&gt;&lt;/a&gt;,只花了不到60，但是体验真的不错。EagleFIler之前就想买的，但是无奈太贵，正好赶上了促销，直接买入，非常好地满足了我的收集癖，而Rocket Typist补足了Alfred的Snippets。如果下次RT的iOS版本也搞活动就好了。&lt;/p&gt;
+&lt;p&gt;今天给妈妈送行李的路上终于打开了《光环3：最后一击》，果然坐地铁的时候看书就是能看得很认真，在家看的时候看三分钟我就想玩手机。&lt;s&gt;争取早点看完写个总结怎么又开始挖坑了我？致远星的陨落还没写总结呢。&lt;/s&gt;&lt;/p&gt;
+">2024-08-02</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/Python 3 SSL CERTIFICATE_VERIFY_FAILED/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;一句话总结：进入你的Python安装文件夹，找到Install Certificates.command双击安装即可。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近一直在捣鼓Alfred Workflow，昨天发现了一个workflow是查询&lt;u&gt;&lt;a href=&#34;https://github.com/xilopaint/alfred-urban-dictionary&#34;&gt;Urban Dictionary&lt;/a&gt;&lt;/u&gt;还蛮有用的，也不用看任何广告了，不过仍需魔法。&lt;/p&gt;
+&lt;p&gt;第一次使用的时候就发生了问题，打开Alfred的Debug模式发现问题是Python 3的&amp;quot;SSL: CERTIFICATE_VERIFY_FAILED&amp;quot;（忘了截图了），于是上网找了各种方法，要么就是操作过于复杂，要么就是过时无法解决了。&lt;/p&gt;
+&lt;p&gt;后来在&lt;u&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_38169413/article/details/100691214&#34;&gt;CSDN&lt;/a&gt;&lt;/u&gt;发现一个最简单的方法，直接进Python的安装文件夹，双击Install Certificates.command即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721197438/obsidian/tr0mvo3dzc6fwqqpulsq.png&#34; alt=&#34;SC&#34; loading=&#34;lazy&#34;&gt;&lt;center&gt;&lt;font size=&#34;2px&#34;&gt;Install Certificates.command&lt;/font&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;此时再试试Urban Dictionary的workflow已经可以正常使用了。Enjoy it!&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721196297/obsidian/xzza3cxugc1rhiagoiv0.png&#34; alt=&#34;ud截图&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;不过&lt;u&gt;&lt;a href=&#34;https://alfred.app/workflows/giovanni/power-thesaurus/&#34;&gt;Power thesaurus&lt;/a&gt;&lt;/u&gt;的URL依旧拒绝了我，看了原作者的GitHub，有人遇到了跟我一样的问题，说等了24-48小时突然就能使用了，那我只能静静等待了。&lt;/p&gt;
+">解决Python 3 SSL Certificate问题</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/战士的餐桌_朗姆酒/"" data-c="
+          &lt;h2 id=&#34;战士的餐桌介绍&#34;&gt;《战士的餐桌》介绍&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721140692/obsidian/tq4donoyin6d1gdmkjef.png&#34; alt=&#34;《战士的餐桌》豆瓣截图&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;最近在读一本书&lt;u&gt;&lt;a href=&#34;https://book.douban.com/subject/36158482/&#34;&gt;《战士的餐桌：二战各国战地饮食传奇》&lt;/a&gt;&lt;/u&gt;，是微信读书推荐的，不像一般二战背景的书那么严肃，这本算是比较轻松幽默的，每次看书中的战争故事，再配上美食介绍，都颇有种苦中作乐的感觉，而且这本书的章节之间没有关联，所以根据自己感兴趣的内容按照目录找来看就可以了。不过因为我同时还在看别的书，所以这本书的进度还挺慢的。&lt;s&gt;（好吧，其实是因为在看《光环》）&lt;/s&gt;&lt;/p&gt;
+&lt;h2 id=&#34;英国篇传承勇气的纳尔逊之血-朗姆酒&#34;&gt;英国篇：传承勇气的纳尔逊之血-朗姆酒&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这一篇是我觉得比较有意思的，而且历史叙述比较长，看完有点凌乱，所以特意做了个梳理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;哥伦布在第二次远航美洲时将甘蔗带到了古巴，并在加勒比主道上广泛种植，进而形成了规模可观的制糖产业。15世纪末到16世纪初，加勒比地区的制糖工人发明了朗姆酒。&lt;/p&gt;
+&lt;p&gt;在16世纪时英国海军就有每日配给啤酒的习惯，而在17世纪中叶时朗姆酒进入了英国海军，衍生出了一个词叫做“朗姆配给 (rum ration)”。&lt;/p&gt;
+&lt;p&gt;17世纪的一位海军中将弗农对朗姆配给制度进行了更改：调整比例和每日分配的时间，该新制度延续了200多年。因弗农非常喜欢又格罗格兰姆呢制作的外套，获得了老格罗格 (old grog)的绰号，于是水兵们将兑水的朗姆酒也称作格罗格，时至今日已经成为掺水烈酒的称呼。&lt;/p&gt;
+&lt;p&gt;1824年英国海军决定将每日配给的朗姆酒分量减半。1850年进一步削减配给量。1881年军官的朗姆酒配给取消，此后只有士官和水兵能够继续享有此项配给。此外，配给士官的朗姆酒不必兑水，而供给水兵的朗姆酒必须按照弗农当年的命令掺水后来再进行分配。当然，士兵可以选择不领取朗姆酒，作为替代他可以得到每天3便士的补助，不过很少有人会放弃饮酒的快乐。&lt;/p&gt;
+&lt;p&gt;1970年下议院关于是否废除“朗姆配给”引发了一场辩论，史称“朗姆酒大辩论”，最后海军部宣布同年8月1日停止已经延续了3个世纪之久的朗姆酒配给制度。&lt;/p&gt;
+&lt;p&gt;尽管朗姆酒配给制度结束了，但是将朗姆酒作为奖励的这一制度延续了下来。这一制度被称作“连接主桅操桁索 (Splice the mainbrace)”。&lt;/p&gt;
+&lt;p&gt;在1970年之后，只有皇室成员才有权下达“连接主桅操桁索”的命令，通常是在重大纪念日表示庆祝。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://modelshipworld.com/uploads/monthly_2017_06/59386869ab9a8_MainBrace.thumb.jpg.7d26477b73e1b59fae3f3aae75d8666e.jpg&#34; alt=&#34;Splice the mainbrace&#34; loading=&#34;lazy&#34;&gt; &lt;font size=&#34;2px&#34;&gt;splice the mainbrace&lt;/font&gt;&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;这本书我到现在只看了三分之一，然后就跑去看光环了，光环的进度倒是挺快的，已经把&lt;u&gt;&lt;a href=&#34;https://book.douban.com/subject/1462652/&#34;&gt;《致远星的陷落》&lt;/a&gt;&lt;/u&gt;看完了，抽个空把这本也写一写好了。&lt;br&gt;
+写这篇博文的时候，我看了豆瓣评价，发现蛮多人吐槽书像微信公众号的推文集合，不过我个人还是挺喜欢的，毕竟我对军事兴趣不大，了解不深，要是真让我看军事相关的书我应该会立刻睡着。下次再写这本书估计就是我看完了。&lt;/p&gt;
+">战士的餐桌——朗姆酒</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/Figment2_Review/"" data-c="
+          &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;每个月月初和月中刷新本月的XGPU即将退库的游戏似乎是自己的固定流程了，月初的时候发现自己一直下载了却没有玩的Figment 2要退库了，查了一下&lt;u&gt;&lt;a href=&#34;https://howlongtobeat.com/game/99345&#34;&gt;Howlongtobeat&lt;/a&gt;&lt;/u&gt;，流程只要4个小时即可通关，而全成就也只需要6个小时，其他要退库的游戏我实在没多大兴趣或者早已通关（说的是你TOEM）当下就决定来试试Figment。&lt;/p&gt;
+&lt;h2 id=&#34;整体感受&#34;&gt;整体感受&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;游戏整体还不错，蒂姆·波顿的画风，将背景设置在了人类的意识中，是我非常喜欢的与人类大脑、意识和灵魂相关的背景（好吧，其实我就是想到了Psychonauts 2）&lt;/li&gt;
+&lt;li&gt;其实我感觉这个游戏更像是一个童话故事，和小朋友一起玩也会觉得很欢乐，制作组特意搞了个双人模式就是为了合家欢吗？&lt;/li&gt;
+&lt;li&gt;游戏也很符合开发商的名字Bedtime Digital Games，我确实通关了就去睡觉了:-D&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;优点&#34;&gt;优点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;游戏难度适中，不会刻意为难玩家，解谜也很有成就感，就连BOSS战也不会很高难度；&lt;/li&gt;
+&lt;li&gt;BGM非常好听！尤其是boss关卡，音乐富有激情，半夜玩的时候我都会忍不住抖腿。顺带一提，里面的角色人均会rap；&lt;/li&gt;
+&lt;li&gt;本地化做得非常好，英语环境下的角色、地点名字的设定本身就非常有意也很有梗，没想到中文翻译也没有让我失望。尤其是在伦理迷宫的那几本书的翻译，翻译一绝；&lt;/li&gt;
+&lt;li&gt;附带一些哲学思考（这是优点吗？姑且算吧）小鸟Piper是个非常聪明的鸟鸟，经常会有灵魂发问，她和主人公Dusty的一些对话让我觉得她更像是个人而非普通的NPC。而且Piper的戏份也不仅仅是陪衬，快到结局的时候也是发挥了自己的大作用的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;缺点&#34;&gt;缺点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;小公司出品，必不可免地会有一些小问题，人物动作略显僵硬，不过在我玩了1代之后，我发现2代的居然是改善过后的版本了；&lt;/li&gt;
+&lt;li&gt;游戏的剧本和立意很俗套——通过男主Dusty和小鸟伙伴Piper在mind里的一系列冒险呼吁人们关心身边人、将工作时间更多地放在娱乐上；&lt;/li&gt;
+&lt;li&gt;怪物太重复了，一开始非常有新鲜感，但是玩到后期就会发现，怪物来来回回只有那么几种，实在让我疲乏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;游戏截图&#34;&gt;游戏截图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721041431/obsidian/bur9wioahibwfamzubte.png&#34; alt=&#34;野猪怪 &#34; loading=&#34;lazy&#34;&gt;这个是里面的一个怪物被Dusty打败后幻化的形态，忘了叫啥了，只记得原来是一头野猪。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721059375/obsidian/fmxbujk3mgcqz0bvkja8.png&#34; alt=&#34;主人公&#34; loading=&#34;lazy&#34;&gt;说实话这还是我在游戏里第一次看到两位主角的样子。（左Dusty，右Piper）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721059411/obsidian/chk5lsgxt7sus1v2ovxx.png&#34; alt=&#34;小可怜Jester&#34; loading=&#34;lazy&#34;&gt;本作的最终BOSS——Jester，其实也是一个小可怜。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721041970/obsidian/fzstpfdhbtjyp60r7f5u.jpg&#34; alt=&#34;Piper小可爱&#34; loading=&#34;lazy&#34;&gt;我做成就收集的时候在伦理迷宫，Piper对Dusty说有没有可能我们只是别人意识中的一部分，我才发现原来Dusty和现实中的男人是互相不知道的，而玩家所做的这些事情只是Dusty与Piper的冒险，它们只是想驱赶nightmares，让自己所在的地方变回原来的样子，并不是我一开始所想的：男人的意识进入自己的大脑中探寻自己究竟发生了什么，找到原因并采取修正措施，从而恢复正常生活。我突然就在想会不会玩游戏的我也只是别人意识中的一部分？果然我对于梦境、意识、大脑、灵魂一类的东西就是完全无法抵抗。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721041733/obsidian/i4ilgsmfoehj4hrqzycs.png&#34; alt=&#34;欢乐屋&#34; loading=&#34;lazy&#34;&gt;Jester小可怜的屋子，这里是Dusty和Piper收拾欢乐屋。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721041792/obsidian/ofxqxhae6woxmtqbobwr.png&#34; alt=&#34;Jester看到欢乐屋&#34; loading=&#34;lazy&#34;&gt;结局Jester看到收拾好的欢乐屋，特别可爱。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721041916/obsidian/b7pw8lozjnmxfjifsnio.png&#34; alt=&#34;结局Boss战&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+与Jester大战三百回合（其实就是跳舞三百回合）难度一点也不高，我真的太喜欢了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dytqos6vx/image/upload/f_auto/v1721042061/obsidian/fx49ly3usc1abjbj0tys.png&#34; alt=&#34;Jester在欢乐屋与意识对话&#34; loading=&#34;lazy&#34;&gt;Jester在欢乐屋与意识对话，而现实中的男主人也终于放下繁忙的工作，放下对房子的执念，拿上曾经非常喜欢的尤克里里和家人聚在一起。&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;制作组将背景设置为人类的大脑内部，我的每一个opinion都生活在不同的地方，它们或孤身一人，或互相吵架，有的还在活跃，有的早已被我遗忘，但是直到我遇到它们我才知道曾经的我有很多想法和爱好，却都因为繁忙的工作导致nightmares入侵，而Jester“日益壮大”。不过玩到结局会发现，其实这里面根本没有一个坏人，连Jester都是小可怜。&lt;/li&gt;
+&lt;li&gt;感谢Bedtime Digital Games制造梦境，而我在这场梦境中体验了最独一无二的Nightmare。&lt;/li&gt;
+&lt;/ul&gt;
+">欢迎你来到虚构世界——关于游戏Figment2: Creed Valley</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/qLuoHTI65/"" data-c="
+          &lt;p&gt;搜了好久，终于发现一个可以优雅使用Cloudinary的&lt;a href=&#34;https://github.com/uday-samsani/obsidian-cloudinary&#34;&gt;&lt;strong&gt;插件&lt;/strong&gt;&lt;/a&gt;，可以直接在Ob里面上传图片到Cloudinary并且返回URL。&lt;/p&gt;
+&lt;p&gt;设置也很简单，只需要设置cloud name, cloud upload template和cloud upload folder就完事了。&lt;/p&gt;
+&lt;p&gt;实际测试了一下，速度很快。以后就安心使用Obsidian写博客了😌不用窗口来回切换复制粘贴了。&lt;/p&gt;
+">Obsidian-Cloudinary</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://rh10hd.github.io/post/about/"" data-c="
+          &lt;ul&gt;
+&lt;li&gt;不定期冒泡，喜欢自说自话，如果有认识的朋友看到了，请不要戳穿我。&lt;/li&gt;
+&lt;li&gt;喜欢游戏，手持Xbox和NS，&lt;span style=&#34;background-color: yellow&#34;&gt;FPS毒唯 &lt;/span&gt;（最爱光环和TTF2）&lt;/li&gt;
+&lt;li&gt;健身环狂热爱好者，三周目进行中。&lt;/li&gt;
+&lt;/ul&gt;
+">ABOUT ME</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
+
+
+
+
+</html>
